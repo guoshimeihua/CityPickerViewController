@@ -10,4 +10,8 @@
 
 @interface CityPickerHeaderItemView : UIView
 
+@property (nonatomic, strong) NSArray *cityModels;
+
+- (instancetype)initWithFrame:(CGRect)frame title:(NSString *)title;
+
 @end

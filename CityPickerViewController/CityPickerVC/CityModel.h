@@ -26,6 +26,6 @@
 + (NSMutableArray *)findCityModelWithCityNames:(NSArray *)cityNames cityModels:(NSArray *)cityModels isFuzzy:(BOOL)isFuzzy;
 
 /** 城市检索 */
-+ (NSArray *)searchCityModelsWithCondition:(NSString *)condition citys:(NSArray *)citys;
++ (NSMutableArray *)searchCityModelsWithCondition:(NSString *)condition citys:(NSArray *)citys;
 
 @end

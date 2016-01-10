@@ -15,6 +15,16 @@
 		32573C1C1C414204001B9D3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32573C1A1C414204001B9D3A /* LaunchScreen.storyboard */; };
 		32573C271C414204001B9D3A /* CityPickerViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32573C261C414204001B9D3A /* CityPickerViewControllerTests.m */; };
 		32573C321C414204001B9D3A /* CityPickerViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32573C311C414204001B9D3A /* CityPickerViewControllerUITests.m */; };
+		32573C791C42B69B001B9D3A /* City.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32573C6D1C42B69B001B9D3A /* City.plist */; };
+		32573C7A1C42B69B001B9D3A /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32573C6F1C42B69B001B9D3A /* CityModel.m */; };
+		32573C7B1C42B69B001B9D3A /* CityPickerHeaderItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32573C721C42B69B001B9D3A /* CityPickerHeaderItemView.m */; };
+		32573C7C1C42B69B001B9D3A /* CityPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32573C741C42B69B001B9D3A /* CityPickerViewController.m */; };
+		32573C7D1C42B69B001B9D3A /* nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 32573C751C42B69B001B9D3A /* nav.png */; };
+		32573C7E1C42B69B001B9D3A /* nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32573C761C42B69B001B9D3A /* nav@2x.png */; };
+		32573C7F1C42B69B001B9D3A /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32573C781C42B69B001B9D3A /* SearchView.m */; };
+		32573C811C42B6D5001B9D3A /* cp1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 32573C801C42B6D5001B9D3A /* cp1.gif */; };
+		32573C831C42B6DB001B9D3A /* cp2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 32573C821C42B6DB001B9D3A /* cp2.gif */; };
+		32573C851C42B6DF001B9D3A /* cp3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 32573C841C42B6DF001B9D3A /* cp3.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,21 @@
 		32573C2D1C414204001B9D3A /* CityPickerViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CityPickerViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32573C311C414204001B9D3A /* CityPickerViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityPickerViewControllerUITests.m; sourceTree = "<group>"; };
 		32573C331C414204001B9D3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32573C6D1C42B69B001B9D3A /* City.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = City.plist; sourceTree = "<group>"; };
+		32573C6E1C42B69B001B9D3A /* CityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityModel.h; sourceTree = "<group>"; };
+		32573C6F1C42B69B001B9D3A /* CityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityModel.m; sourceTree = "<group>"; };
+		32573C701C42B69B001B9D3A /* CityPickerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityPickerConfiguration.h; sourceTree = "<group>"; };
+		32573C711C42B69B001B9D3A /* CityPickerHeaderItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityPickerHeaderItemView.h; sourceTree = "<group>"; };
+		32573C721C42B69B001B9D3A /* CityPickerHeaderItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityPickerHeaderItemView.m; sourceTree = "<group>"; };
+		32573C731C42B69B001B9D3A /* CityPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityPickerViewController.h; sourceTree = "<group>"; };
+		32573C741C42B69B001B9D3A /* CityPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityPickerViewController.m; sourceTree = "<group>"; };
+		32573C751C42B69B001B9D3A /* nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav.png; sourceTree = "<group>"; };
+		32573C761C42B69B001B9D3A /* nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav@2x.png"; sourceTree = "<group>"; };
+		32573C771C42B69B001B9D3A /* SearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchView.h; sourceTree = "<group>"; };
+		32573C781C42B69B001B9D3A /* SearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchView.m; sourceTree = "<group>"; };
+		32573C801C42B6D5001B9D3A /* cp1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cp1.gif; sourceTree = "<group>"; };
+		32573C821C42B6DB001B9D3A /* cp2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cp2.gif; sourceTree = "<group>"; };
+		32573C841C42B6DF001B9D3A /* cp3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cp3.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +126,7 @@
 		32573C0B1C414204001B9D3A /* CityPickerViewController */ = {
 			isa = PBXGroup;
 			children = (
+				32573C6C1C42B69B001B9D3A /* CityPickerVC */,
 				32573C0F1C414204001B9D3A /* AppDelegate.h */,
 				32573C101C414204001B9D3A /* AppDelegate.m */,
 				32573C121C414204001B9D3A /* ViewController.h */,
@@ -117,6 +143,9 @@
 		32573C0C1C414204001B9D3A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				32573C801C42B6D5001B9D3A /* cp1.gif */,
+				32573C821C42B6DB001B9D3A /* cp2.gif */,
+				32573C841C42B6DF001B9D3A /* cp3.gif */,
 				32573C0D1C414204001B9D3A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +167,25 @@
 				32573C331C414204001B9D3A /* Info.plist */,
 			);
 			path = CityPickerViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		32573C6C1C42B69B001B9D3A /* CityPickerVC */ = {
+			isa = PBXGroup;
+			children = (
+				32573C6D1C42B69B001B9D3A /* City.plist */,
+				32573C6E1C42B69B001B9D3A /* CityModel.h */,
+				32573C6F1C42B69B001B9D3A /* CityModel.m */,
+				32573C701C42B69B001B9D3A /* CityPickerConfiguration.h */,
+				32573C711C42B69B001B9D3A /* CityPickerHeaderItemView.h */,
+				32573C721C42B69B001B9D3A /* CityPickerHeaderItemView.m */,
+				32573C731C42B69B001B9D3A /* CityPickerViewController.h */,
+				32573C741C42B69B001B9D3A /* CityPickerViewController.m */,
+				32573C751C42B69B001B9D3A /* nav.png */,
+				32573C761C42B69B001B9D3A /* nav@2x.png */,
+				32573C771C42B69B001B9D3A /* SearchView.h */,
+				32573C781C42B69B001B9D3A /* SearchView.m */,
+			);
+			path = CityPickerVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,9 +291,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32573C831C42B6DB001B9D3A /* cp2.gif in Resources */,
+				32573C811C42B6D5001B9D3A /* cp1.gif in Resources */,
 				32573C1C1C414204001B9D3A /* LaunchScreen.storyboard in Resources */,
+				32573C791C42B69B001B9D3A /* City.plist in Resources */,
+				32573C7E1C42B69B001B9D3A /* nav@2x.png in Resources */,
 				32573C191C414204001B9D3A /* Assets.xcassets in Resources */,
+				32573C851C42B6DF001B9D3A /* cp3.gif in Resources */,
 				32573C171C414204001B9D3A /* Main.storyboard in Resources */,
+				32573C7D1C42B69B001B9D3A /* nav.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +324,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32573C7A1C42B69B001B9D3A /* CityModel.m in Sources */,
 				32573C141C414204001B9D3A /* ViewController.m in Sources */,
 				32573C111C414204001B9D3A /* AppDelegate.m in Sources */,
+				32573C7F1C42B69B001B9D3A /* SearchView.m in Sources */,
+				32573C7B1C42B69B001B9D3A /* CityPickerHeaderItemView.m in Sources */,
 				32573C0E1C414204001B9D3A /* main.m in Sources */,
+				32573C7C1C42B69B001B9D3A /* CityPickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +554,7 @@
 				32573C381C414204001B9D3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32573C391C414204001B9D3A /* Build configuration list for PBXNativeTarget "CityPickerViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +563,7 @@
 				32573C3B1C414204001B9D3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32573C3C1C414204001B9D3A /* Build configuration list for PBXNativeTarget "CityPickerViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +572,7 @@
 				32573C3E1C414204001B9D3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

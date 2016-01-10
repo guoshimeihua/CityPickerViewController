@@ -62,7 +62,7 @@
 }
 
 /** 城市检索 */
-+ (NSArray *)searchCityModelsWithCondition:(NSString *)condition citys:(NSArray *)citys {
++ (NSMutableArray *)searchCityModelsWithCondition:(NSString *)condition citys:(NSArray *)citys {
     // 默认是模糊查找
     return [self findCityModelWithCityNames:@[condition] cityModels:citys isFuzzy:NO];
 }
