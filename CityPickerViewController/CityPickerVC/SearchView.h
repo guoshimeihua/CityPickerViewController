@@ -22,6 +22,9 @@
 @property (nonatomic, weak) id<SearchViewDelegate> delegate;
 @property (nonatomic, strong) NSArray *cityModels;
 
+@property (nonatomic, strong) UITableView *downTableView; //下层的table
+@property (nonatomic, strong) UIView *downView;
+
 - (void)show;
 - (void)hidden;
 

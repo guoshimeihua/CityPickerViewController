@@ -18,5 +18,6 @@ static NSString *SelectedCityKey = @"SelectedCityKey";
 #define WIDTH [UIScreen mainScreen].bounds.size.width
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
 #define CityPickerBGColor [UIColor colorWithRed:237/255.0 green:237/255.0 blue:237/255.0 alpha:1.0]
+#define CityPickerTextColor [UIColor colorWithRed:97/255.0 green:97/255.0 blue:97/255.0 alpha:1.0]
 
 #endif /* CityPickerConfiguration_h */

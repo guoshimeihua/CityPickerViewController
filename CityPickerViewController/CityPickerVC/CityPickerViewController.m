@@ -298,6 +298,7 @@
     NSArray *children = cityModel.children;
     CityModel *childrenCityModel = children[indexPath.row];
     cell.textLabel.text = childrenCityModel.name;
+    cell.textLabel.textColor = [UIColor colorWithRed:69/255.0 green:69/255.0 blue:69/255.0 alpha:1.0];
     return cell;
 }
 
@@ -329,11 +330,11 @@
 }
 
 - (void)searchClick:(UIButton *)sender {
-    if (_searchView == nil) {
-        _searchView = [[SearchView alloc] init];
-        _searchView.delegate = self;
-        _searchView.cityModels = self.cityModels;
-    }
+    _searchView = [[SearchView alloc] init];
+    _searchView.downTableView = self.table;
+    _searchView.downView = self.view;
+    _searchView.delegate = self;
+    _searchView.cityModels = self.cityModels;
     [_searchView show];
 }
 

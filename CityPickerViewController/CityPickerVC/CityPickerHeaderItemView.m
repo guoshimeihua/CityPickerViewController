@@ -20,8 +20,8 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        [self setTitleColor:[UIColor colorWithHue:31/255.0 saturation:31/255.0 brightness:31/255.0 alpha:1.0] forState:UIControlStateNormal];
-        [self setTitleColor:[UIColor colorWithHue:141/255.0 saturation:141/255.0 brightness:141/255.0 alpha:1.0] forState:UIControlStateHighlighted];
+        [self setTitleColor:[UIColor colorWithRed:97/255.0 green:97/255.0 blue:97/255.0 alpha:1.0] forState:UIControlStateNormal];
+        [self setTitleColor:[UIColor colorWithHue:237/255.0 saturation:237/255.0 brightness:237/255.0 alpha:1.0] forState:UIControlStateHighlighted];
         self.titleLabel.font = [UIFont systemFontOfSize:15];
         self.layer.cornerRadius = 5;
         self.layer.masksToBounds = YES;
@@ -52,6 +52,7 @@
         _buttons = [NSMutableArray array];
         
         self.titleLabel = [[UILabel alloc] init];
+        self.titleLabel.textColor = [UIColor colorWithRed:148/255.0 green:148/255.0 blue:148/255.0 alpha:1.0];
         self.titleLabel.font = [UIFont systemFontOfSize:16];
         self.titleLabel.text = title;
         [self addSubview:self.titleLabel];

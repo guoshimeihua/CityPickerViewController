@@ -36,7 +36,7 @@
         searchBG.image = [UIImage imageNamed:@"nav.png"];
         [self addSubview:searchBG];
         
-        _searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 20, WIDTH, 44)];
+        _searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 20, WIDTH-55, 44)];
         _searchBar.placeholder = @"请输入城市中文名称或者拼音";
         _searchBar.delegate = self;
         _searchBar.backgroundImage = [UIImage imageNamed:@"nav.png"];
@@ -65,16 +65,22 @@
         }
         [self addSubview:_searchBar];
         
-        _searchBar.showsCancelButton = YES;
-        _searchBar.tintColor = [UIColor redColor];
-        NSArray *subviews = [(_searchBar.subviews[0]) subviews];
-        for (id view in subviews) {
-            if ([view isKindOfClass:[UIButton class]]) {
-                UIButton *cancleBtn = (UIButton *)view;
-                [cancleBtn setTitle:@"取消" forState:UIControlStateNormal];
-                break;
-            }
-        }
+//        _searchBar.showsCancelButton = YES;
+//        _searchBar.tintColor = [UIColor redColor];
+//        NSArray *subviews = [(_searchBar.subviews[0]) subviews];
+//        for (id view in subviews) {
+//            if ([view isKindOfClass:[UIButton class]]) {
+//                UIButton *cancleBtn = (UIButton *)view;
+//                [cancleBtn setTitle:@"取消" forState:UIControlStateNormal];
+//                break;
+//            }
+//        }
+        
+        UIButton *cancleBtn = [[UIButton alloc] initWithFrame:CGRectMake(WIDTH-49, 20, 44, 44)];
+        [cancleBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [cancleBtn setTitle:@"取消" forState:UIControlStateNormal];
+        [cancleBtn addTarget:self action:@selector(cancleClick:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:cancleBtn];
         
         _table = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, WIDTH, HEIGHT - 64) style:UITableViewStyleGrouped];
         _table.delegate = self;
@@ -188,22 +194,44 @@
 
 #pragma mark - public methods
 - (void)show {
+    CGRect rcOld = self.downView.frame;
+    CGRect rcNew = rcOld;
+    rcNew.origin.y -= 44;
+    CGRect rcTable = self.downTableView.frame;
+    rcTable.size.height += 44;
+    self.downTableView.frame = rcTable;
+    [UIView animateWithDuration:0.2f animations:^{
+        self.downView.frame = rcNew;
+    }];
+    
+    
     [_searchBar becomeFirstResponder];
     _searchBar.returnKeyType = UIReturnKeySearch;
     self.hidden = NO;
     [_table reloadData];
     [[[UIApplication sharedApplication].windows objectAtIndex:0] addSubview:self];
     self.alpha = 0.0;
-    
-    [UIView animateWithDuration:0.3 animations:^{
+    [UIView animateWithDuration:0.1 animations:^{
         self.alpha = 1.0;
     }];
 }
 
 - (void)hidden {
-    [_searchBar resignFirstResponder];
+    CGRect rcOld = self.downView.frame;
+    CGRect rcNew = rcOld;
+    rcNew.origin.y += 44;
     
-    [UIView animateWithDuration:0.3 animations:^{
+    CGRect rcTable = self.downTableView.frame;
+    rcTable.size.height -= 44;
+    
+    [UIView animateWithDuration:0.2f animations:^{
+        self.downView.frame = rcNew;
+        self.downTableView.frame = rcTable;
+    }];
+    
+    _searchBar.text = nil;
+    [_searchBar resignFirstResponder];
+    [UIView animateWithDuration:0.1 animations:^{
         self.alpha = 0.0;
     } completion:^(BOOL finished) {
         self.hidden = YES;
@@ -212,6 +240,10 @@
 
 #pragma mark - event response
 - (void)closebgClick {
+    [self hidden];
+}
+
+- (void)cancleClick:(UIButton *)sender {
     [self hidden];
 }
 
