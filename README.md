@@ -59,9 +59,10 @@ Xcode7.1
     
     
 #结束语
-本框架参考了Chalin Swift的CFCityPickerVC, 链接地址如下：
+    同时感谢晓章同学的bug修复。
+    本框架参考了Chalin Swift的CFCityPickerVC, 链接地址如下：
 [点击这里](https://github.com/CharlinFeng/CFCityPickerVC)
-同时感谢晓章同学的bug修复。
+
 
 
 #MIT
