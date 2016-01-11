@@ -13,15 +13,15 @@ Xcode7.1
     
 # 效果预览
 ### 1.基本功能以及索引定位
-![image](https://github.com/guoshimeihua/CityPickerViewController/blob/master/CityPickerViewController/cp1.gif)
+![image](https://github.com/guoshimeihua/CityPickerViewController/blob/master/CityPickerViewController/demo16.gif)
 
 
 ### 2.城市选择以及回调（注意后台打印输出信息）
-![image](https://github.com/guoshimeihua/CityPickerViewController/blob/master/CityPickerViewController/cp2.gif)
+![image](https://github.com/guoshimeihua/CityPickerViewController/blob/master/CityPickerViewController/demo17.gif)
 
 
 ### 3.自动记录历史选择
-![image](https://github.com/guoshimeihua/CityPickerViewController/blob/master/CityPickerViewController/cp3.gif)
+![image](https://github.com/guoshimeihua/CityPickerViewController/blob/master/CityPickerViewController/demo18.gif)
 
 
 # 使用说明
@@ -61,6 +61,7 @@ Xcode7.1
 #结束语
 本框架参考了Chalin Swift的CFCityPickerVC, 链接地址如下：
 [点击这里](https://github.com/CharlinFeng/CFCityPickerVC)
+同时感谢晓章同学的bug修复。
 
 
 #MIT
